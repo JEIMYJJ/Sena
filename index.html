@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #282c34;
+            color: white;
+            width: 100%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .parrafo {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #555;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            width: 80%;
+            max-width: 600px;
+        }
+        button {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 1rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 2rem;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #004494;
+            transform: scale(1);
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #282c34;
+            color: white;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiero aprender programación</h1>
+        <p id="miParrafo" class="parrafo">
+            Mi nombre es Jeimy. Soy un entusiasta de la programación y estoy aprendiendo nuevas habilidades en JavaScript,front-end
+        </p>
+    </header>
+   
+        <button id="btn">Para</button>
+
+    <footer>
+        <p>Creado por Jeimy Jimenez | © 2024</p>
+    </footer>
+    <script>
+        const btn = document.getElementById("btn");
+        const parrafo = document.getElementById("miParrafo");
+        const texto = ["JS", "React", "y mucho más..."];
+        let cont = 0;
+
+        btn.addEventListener("click", function() {
+            // Change the text of the button when it is clicked
+            btn.textContent = "Ser igual al profesor";
+        });
+    </script>
+</body>
+</html>
